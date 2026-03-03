@@ -11,6 +11,19 @@
 		h2 {color:#33ff33; font-size:40px;}
 	</style>
 
+	<script>
+		function change1() {
+  			document.getElementById("pic").src = "mountain.jpg";
+  			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "cliff.jpg";
+  			document.getElementById("h2text").innerText = "YI-SIANG HUANG";
+		}
+	</script>
+
+
 </head>
 <body>
 	<table border="1" width="100%">
@@ -31,12 +44,12 @@
 	<table width="70%">
 		<tr>
 			<td>
-	<img src="cliff.jpg"width="110%"></img>
+	<img src="cliff.jpg"width="110%"id="pic" onmouseover="change1()" onmouseout="change2()"></img>
 	        </td>
 
 			<td>
 	<h1>黃義祥</h1>
-	<h2>YI-SIANG HUANG</h2>
+	<h2 id="h2text">YI-SIANG HUANG</h2>
 	        </td>
 	    </tr>
 	</table>
